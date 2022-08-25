@@ -23,13 +23,15 @@
      <div>
          <label for="rnput">Ваш ответ:</label>
          <span><input id="rnput" value="1" type="number"  max="100" min="1" class=" w-50" class="form-control"></span>
-         <span><button oninput="randod()" type="button" class="btn btn-outline-secondary">Дать 
+         <span><button onclick="randod()" type="button" id="Return"  class="btn btn-outline-secondary">Угадай
          </button></span>
      </div>
 
      <div class="gr">
         <h3>Ваш ответ: <span id="number">-</span> </h3>
      </div>
+     <span><button type="button" class="btn btn-outline-secondary opacity-0">начать заново
+    </button></span>
     </div>
 </body>
 </html>
