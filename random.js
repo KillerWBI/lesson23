@@ -10,13 +10,13 @@ let inr = rand;
 let h = +rnput.value;
 numbers.innerHTML = `${i}`
 if (h > inr){
-      number.innerHTML = `${h} больше загаданного`
+      number.innerHTML = `ваш ответ ${h} больше загаданного`
       i--
       numbers.innerHTML = `${i}`
 }
 
 if (h < inr){
-    number.innerHTML = `${h} меньше загаданного`
+    number.innerHTML = `ваш ответ ${h} меньше загаданного`
     i--
     numbers.innerHTML = `${i}`
 }
@@ -27,7 +27,7 @@ if (h == inr){
     }
 
 if (i == 0){
-    number.innerHTML = `вы Проиграли`
+    number.innerHTML = `ВЫ Проиграли Загаданое Число Было ${inr}`
     GameOver()
 }
 
