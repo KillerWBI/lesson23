@@ -1,19 +1,46 @@
+let rand = (Math.floor(Math.random() * 100) + 1);
+console.log(`${rand}`)
+let i = 10;
 
 function randod() {
-let rand = (Math.floor(Math.random() * 100) + 1);
+
+
+Return.innerHTML = `Угадать`
 let inr = rand;
 let h = +rnput.value;
+numbers.innerHTML = `${i}`
+if (h > inr){
+      number.innerHTML = `${h} больше загаданного`
+      i--
+      numbers.innerHTML = `${i}`
+}
 
-for (let i = 1; i <=10; i++){
-    numbers.innerHTML = `${i}`;
+if (h < inr){
+    number.innerHTML = `${h} меньше загаданного`
+    i--
+    numbers.innerHTML = `${i}`
+}
+
 if (h == inr){
-    number.innerHTML = `ваш Ответ ${h} правильный`;
-    break
-}else if (h > inr){
-    number.innerHTML = `ваш Ответ ${h} больше`;
-}else if (h < inr){
-    number.innerHTML = `ваш Ответ ${h} меньше`;
-}
-}
+    number.innerHTML = `Вы угадали!!!`
+    Winner()
+    }
+
+if (i == 0){
+    number.innerHTML = `вы Проиграли`
+    GameOver()
 }
 
+}
+
+function GameOver() {
+      i = 11;
+      let rand = (Math.floor(Math.random() * 100) + 1);
+      Return.innerHTML = `Начать заново`
+      
+    }
+ function Winner() {
+    i = 10;
+    let rand = (Math.floor(Math.random() * 100) + 1);
+    Return.innerHTML = `Начать заново`
+ }
