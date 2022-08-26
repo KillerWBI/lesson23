@@ -35,12 +35,10 @@ if (i == 0){
 
 function GameOver() {
       i = 11;
-      let rand = (Math.floor(Math.random() * 100) + 1);
       Return.innerHTML = `Начать заново`
       
     }
  function Winner() {
     i = 10;
-    let rand = (Math.floor(Math.random() * 100) + 1);
     Return.innerHTML = `Начать заново`
  }
